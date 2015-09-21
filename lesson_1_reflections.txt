@@ -1,0 +1,11 @@
+reflections to be added to mac:
+
+Now that you have your workplace set up, what do you want to try
+using Git for?
+
+Anything really, I would also like to see how the whole GitHub fits 
+in with Git.  I will be using it for the MongoDB project and will
+be using it on others as well.
+
+
+
