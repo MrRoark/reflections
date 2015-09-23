@@ -1,0 +1,48 @@
+What happens when you initialize a repository?  Why do you need to do it?
+
+The repository has a .git folder added to it.  This is what helps to keep track of a lot of the data.  The reason you need to do this 
+is because if you don't, then nothing will be tracked.
+
+
+How is the staging area different from the working directory and the repository?  What value do you think it offers?
+
+The staging area is different from the repository because everything in the repo is being tracked, whereas the files in the repository are not tracked
+but are about to be, if they are committed.  The working directory is the directory that you are currently in in the command line, so 
+these are similar concepts that have some overlap.  
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can run git diff --staged to see exactly what the differences are between what is currently staged and the most recent commit.  If it
+seems that there is only one logical change then you can commit, and if not then you can reconsider for yourself what changes you have made,
+and whether to make more changes related to the logic of the first change or to backpedal a bit and make it so there is only one change,
+depending on where you consider the differences to lie.
+
+
+What are some situations when branches would be helpful in keeping your history organized?  How would branches help?
+
+Some situations where branches would be useful in keeping my history organized would include anything that I am not sure about having in the code
+but I want to try out.  It is perfect for any type of tinkering that might benefit the code.  Branches help becuase without them, you are looking
+at a linear commit history which will not be nearly as navigable if you are testing out different versions of code.  For a different language
+version, a branch can just be that version in the other language.  But without branching, how would you keep track of both languages?  Branches
+are useful becuase the nature of experiment is that a lot of them will end up being dead ends, and that is ok.
+
+
+How do the diagrams help you visualize the branch structure?
+
+They help visualize the branch structure because they are visual diagrams.  Seeing the exact branch points and the directionality of them (looking
+towards the parent) helps with understanding them as well.
+
+
+What is the result of merging two branches together?  Why do we represent it in the diagram the way that we do?
+
+The result of merging two branches together is to have a file that is the sum of the changes introduced by both people since the common commit,
+plus the common commit.  The reason that we represent it as a node that is connected backwards to both branches is because they trace back to the
+common commit, and this is representative of what is happening and the mechanics of it.
+
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+I think that the pros of Git's automatic merging is that it only does it when it is certain.  This means that there will be plenty of instances 
+where it will not automatically merge, and in these cases you aren't really losing anything compared to manual merges.  When the automatic merges
+do work, they save you time, so there seems to be a net benefit to the way Git does things.
