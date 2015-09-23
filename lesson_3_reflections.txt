@@ -1,0 +1,7 @@
+When would you want to create a remote repository rather than keep all you work local?
+
+You would want to create a remote repository any time that something is to be gained by having the repository 
+be available online, both to yourself and others.  A time that might fall into this category would be when 
+you are using multiple computers throughout the day, say doing some work from work and some from a home computer.
+Another would be if the project that you are working on is collaborative in nature, and you wanted to make 
+the repository available to other involved in the project.
